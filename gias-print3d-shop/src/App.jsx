@@ -11,7 +11,7 @@ import SignUp from './pages/SignUp';
 import Checkout from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
 import { useApp } from './context/AppContext';
-import { Routes, Route, Navigate } from 'react-router-dom';
+
 
 function ProtectedRoute({ children }) {
   const { user } = useApp();
