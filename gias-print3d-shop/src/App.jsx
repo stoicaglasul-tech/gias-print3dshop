@@ -11,6 +11,7 @@ import SignUp from './pages/SignUp';
 import Checkout from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
 import { useApp } from './context/AppContext';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 function ProtectedRoute({ children }) {
   const { user } = useApp();
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
           <Route path="/order-confirmation" element={<ProtectedRoute><OrderConfirmation /></ProtectedRoute>} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />
