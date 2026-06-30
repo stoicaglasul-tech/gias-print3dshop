@@ -104,3 +104,13 @@
   .nav-link { padding: 14px 16px; border-radius: var(--radius-sm); }
   .nav-actions { flex-direction: row; margin: 16px 0 0; padding: 16px 0 0; border-left: none; border-top: 1px solid var(--border); }
 }
+@media (max-width: 480px) {
+  .navbar-inner { gap: 10px; }
+  .navbar-logo { font-size: 1.1rem; }
+  .logo-icon { font-size: 1.2rem; }
+  .nav-icon-btn { width: 42px; height: 42px; font-size: 1.2rem; }
+  .nav-cart-btn { padding: 0 14px; font-size: 0.95rem; height: 42px; }
+  .nav-badge { width: 18px; height: 18px; font-size: 0.7rem; }
+  .nav-user-name { display: none; }
+  .nav-actions { gap: 10px; }
+}
